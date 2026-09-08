@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RefreshCw, Droplets, Leaf, Shield, ArrowUp, X } from 'lucide-react';
+import { RefreshCw, Droplets, Leaf, Shield, ArrowUp, X, Heart, ExternalLink } from 'lucide-react';
 import { sound } from '../audio/SoundSynthesizer';
 import { StudioTab } from './StudioDock';
 
@@ -129,6 +129,32 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab }) => {
             </button>
           </div>
 
+        </div>
+
+        {/* Creator Attribution Credits */}
+        <div className="pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+          <div className="flex items-center gap-2">
+            <span>Made with</span>
+            <Heart className="w-3.5 h-3.5 text-[#F40009] fill-[#F40009] animate-pulse" />
+            <span>by</span>
+            <a
+              href="https://www.vishwak.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-white/90 hover:text-[#00F5D4] transition-colors inline-flex items-center gap-1 underline underline-offset-4 decoration-white/20 hover:decoration-[#00F5D4]"
+            >
+              <span>Vishwak Naidu</span>
+              <ExternalLink className="w-3 h-3 text-[#00F5D4]" />
+            </a>
+          </div>
+          <a
+            href="https://www.vishwak.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/50 hover:text-white transition-colors font-mono text-[11px] tracking-wide"
+          >
+            vishwak.tech ↗
+          </a>
         </div>
 
       </div>
