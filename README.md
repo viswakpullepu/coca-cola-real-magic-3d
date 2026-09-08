@@ -1,10 +1,14 @@
 # Coca-Cola "Real Magic" — 3D Kinetic Motion Web Experience
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-noble--pythagoras.vercel.app-F40009?style=for-the-badge&logo=vercel)](https://noble-pythagoras.vercel.app)
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://reactjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-r170-black.svg)](https://threejs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38b2ac.svg)](https://tailwindcss.com/)
 [![Vitest](https://img.shields.io/badge/Tests-34%20Passing-emerald.svg)](https://vitest.dev/)
+
+> 🌐 **Live Production Deployment**: [https://noble-pythagoras.vercel.app](https://noble-pythagoras.vercel.app)
 
 An industry-defining 3D, motion, and physically simulated web platform celebrating **Coca-Cola ("Real Magic")**. Built with a synthesis of 22 specialized design, engineering, audio, and accessibility disciplines, delivering Cannes Lions / Awwwards caliber craftsmanship.
 
