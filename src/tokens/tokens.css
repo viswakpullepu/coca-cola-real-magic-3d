@@ -1,0 +1,100 @@
+/* ==========================================================================
+   COCA-COLA "REAL MAGIC" DESIGN SYSTEM - 3-TIER TOKEN ARCHITECTURE
+   Primitive -> Semantic -> Component
+   WCAG 2.2 AA / AAA Compliant
+   ========================================================================== */
+
+:root {
+  /* --- 1. PRIMITIVE TOKENS (Brand DNA & Raw Color Values) --- */
+  --coke-red-50: #FFF1F2;
+  --coke-red-100: #FFE4E6;
+  --coke-red-500: #F40009;  /* Official Georgia Coca-Cola Classic Red */
+  --coke-red-600: #E40008;
+  --coke-red-700: #BA0007;
+  --coke-red-900: #7A0005;
+
+  --coke-onyx-950: #050505; /* Zero Sugar Deep Void */
+  --coke-onyx-900: #111111;
+  --coke-onyx-800: #1C1C1C;
+  --coke-onyx-700: #2E2E2E;
+
+  --coke-silver-50: #F9FAFB;
+  --coke-silver-100: #F3F4F6;
+  --coke-silver-300: #D1D5DB; /* Diet Coke Brushed Aluminum */
+  --coke-silver-400: #9CA3AF;
+
+  --coke-gold-400: #F59E0B;   /* Vanilla Cream Amber */
+  --coke-gold-300: #FBBF24;
+  --coke-ruby-500: #D90429;   /* Wild Cherry */
+
+  --coke-y3000-cyan: #00F5D4; /* Y3000 Futuristic Cyber Cyan */
+  --coke-y3000-pink: #FF0055; /* Y3000 Neon Strawberry */
+  --coke-y3000-purple: #7B2CBF;
+
+  /* --- 2. SEMANTIC TOKENS (Purpose-driven aliases) --- */
+  --color-brand-primary: var(--coke-red-500);
+  --color-brand-primary-hover: var(--coke-red-600);
+  --color-brand-accent: var(--coke-y3000-cyan);
+  
+  --color-bg-base: #0A0A0A;
+  --color-bg-elevated: #141414;
+  --color-bg-surface: #1E1E1E;
+  --color-bg-glass: rgba(20, 20, 20, 0.75);
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D1D5DB;
+  --color-text-muted: #9CA3AF;
+  --color-text-inverse: #0A0A0A;
+
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-accent: rgba(244, 0, 9, 0.4);
+
+  /* --- 3. COMPONENT TOKENS --- */
+  --hud-bg: rgba(14, 14, 14, 0.85);
+  --hud-border: rgba(255, 255, 255, 0.12);
+  --hud-glow: 0 0 40px -10px rgba(244, 0, 9, 0.35);
+
+  --can-stage-reflection: radial-gradient(circle at 50% 60%, rgba(244, 0, 9, 0.28) 0%, rgba(0, 0, 0, 0) 70%);
+
+  --fizz-bubble-color: rgba(255, 255, 255, 0.85);
+  --fizz-glow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* High-Contrast Mode Override (WCAG AAA >= 7:1) */
+.high-contrast {
+  --color-bg-base: #000000 !important;
+  --color-bg-elevated: #000000 !important;
+  --color-bg-surface: #000000 !important;
+  --color-bg-glass: #000000 !important;
+  --color-text-primary: #FFFFFF !important;
+  --color-text-secondary: #FFFFFF !important;
+  --color-text-muted: #E5E7EB !important;
+  --color-border-subtle: #FFFFFF !important;
+  --color-border-accent: #FFFF00 !important;
+  --color-brand-primary: #FF0000 !important;
+  border-width: 2px !important;
+}
+
+/* Dyslexia-friendly font override */
+.font-dyslexic * {
+  font-family: 'Comic Sans MS', 'OpenDyslexic', 'Outfit', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.7 !important;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.reduced-motion *, .reduced-motion ::before, .reduced-motion ::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
